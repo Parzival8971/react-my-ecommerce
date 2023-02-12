@@ -1,7 +1,9 @@
-import "./App.css";
+import './App.css';
 
-function App() {
-  return <h1>hello world</h1>;
-}
+import Layout from './components/Layout/Layout';
+
+const App = () => {
+  return <Layout />;
+};
 
 export default App;
