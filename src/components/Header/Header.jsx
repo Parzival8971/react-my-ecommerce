@@ -35,7 +35,6 @@ const Header = () => {
               <img src={logo} alt='logo' />
               <div>
                 <h1>리액트마켓</h1>
-                <p>Since 2023</p>
               </div>
             </div>
             {/* navigation */}
