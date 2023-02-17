@@ -50,6 +50,7 @@ h2 {
 ol,
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
 a {
@@ -63,4 +64,9 @@ img {
 
 section {
   padding: 60px 0px;
+}
+
+.section__title {
+  color: var(--primary-color);
+  font-weight: 600;
 }
