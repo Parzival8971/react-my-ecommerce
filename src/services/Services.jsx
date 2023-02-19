@@ -12,7 +12,7 @@ const Services = () => {
       <Container>
         <Row>
           {serviceData.map((item, idx) => (
-            <Col lg='3' md='4' key={idx}>
+            <Col lg='3' md='6' key={idx}>
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 className='service__item'

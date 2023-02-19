@@ -63,9 +63,9 @@ const Home = () => {
                 <p className='hero__subtitle'>트렌드 제품 {year}</p>
                 <h2>실내를 더욱 미니멀하고 모던하게!</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dolorem eos odit nobis nam fugiat explicabo autem. Rem
-                  deserunt atque labore!
+                  무난하고 평범한 집 말고, 내 취향을 가득 담은 집을 만들어
+                  볼까요? MARKET에서는 내 취향을 가장 쉽게, 부담없이 만날 수
+                  있어요. 아주 작은 시도로도 집은 계속 새로워질 수 있답니다.
                 </p>
                 <motion.button whileTap={{ scale: 1.2 }} className='buy__btn'>
                   <Link to='/shop'>쇼핑하기</Link>
@@ -108,7 +108,7 @@ const Home = () => {
       <section className='timer__count'>
         <Container>
           <Row>
-            <Col lg='6' md='6'>
+            <Col lg='6' md='12' className='count__down-col'>
               <div className='clock__top-content'>
                 <h4 className='text-white fs-6 mb-2'>Limited Offers</h4>
                 <h3 className='text-white fs-5 mb-3'>Quality Armchair</h3>
@@ -121,7 +121,7 @@ const Home = () => {
                 <Link to='/shop'>쇼핑하기</Link>
               </motion.button>
             </Col>
-            <Col lg='6' md='6' className='text-end'>
+            <Col lg='6' md='12' className='text-end counter__img'>
               <img src={counterImg} alt='counterImg' />
             </Col>
           </Row>

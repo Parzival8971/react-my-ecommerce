@@ -57,7 +57,7 @@ const Header = () => {
             <div className='logo'>
               <img src={logo} alt='logo' />
               <div>
-                <h1>리액트마켓</h1>
+                <h1>MARKET</h1>
               </div>
             </div>
             {/* navigation */}
