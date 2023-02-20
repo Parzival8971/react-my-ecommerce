@@ -31,7 +31,7 @@ const Header = () => {
   const menuRef = useRef(null);
 
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
-  // console.log(useSelector((state) => state));
+  console.log(useSelector((state) => state));
 
   const stickyHeaderFunc = () => {
     window.addEventListener('scroll', () => {
