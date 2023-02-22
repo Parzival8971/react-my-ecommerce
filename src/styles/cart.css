@@ -1,0 +1,20 @@
+.table tr td img {
+  width: 100px !important;
+  height: 100px !important;
+  border: 0.1px solid var(--primary-color);
+  object-fit: contain;
+}
+
+id i {
+  cursor: pointer;
+}
+
+td {
+  line-height: 100px;
+}
+
+td,
+th {
+  text-align: center;
+  color: var(--primary-color);
+}

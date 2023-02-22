@@ -61,13 +61,13 @@ const Shop = () => {
   };
 
   return (
-    <Helmet title='Shop'>
+    <Helmet title='쇼핑'>
       <CommonSection title='Products' />
 
       <section>
         <Container>
           <Row>
-            <Col lg='3' md='3'>
+            <Col lg='3' md='6'>
               <div className='filter__widget'>
                 <select onChange={handleFilter}>
                   <option>카테고리 정렬</option>
@@ -79,16 +79,15 @@ const Shop = () => {
                 </select>
               </div>
             </Col>
-            <Col lg='3' md='3'>
+            <Col lg='3' md='6' className='text-end'>
               <div className='filter__widget'>
                 <select>
-                  <option>카테고리 정렬</option>
                   <option value='ascending'>최신순</option>
                   <option value='descending'>오래된순</option>
                 </select>
               </div>
             </Col>
-            <Col lg='6' md='6'>
+            <Col lg='6' md='12'>
               <div className='search__box'>
                 <input
                   type='text'

@@ -54,7 +54,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Helmet title={'Home'}>
+    <Helmet title='Home'>
       <section className='hero__section'>
         <Container>
           <Row>
