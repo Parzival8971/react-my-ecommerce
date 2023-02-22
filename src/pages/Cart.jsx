@@ -7,6 +7,7 @@ import { Col, Container, Row } from 'reactstrap';
 import { motion } from 'framer-motion';
 import { cartActions } from '../redux/slices/cartSlice';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
@@ -66,9 +67,19 @@ const Cart = () => {
 
             <Col lg='3'>
               <div>
-                <h6>총 결제금액</h6>
-                <span>{totalAmount}</span>
-                <p>전 상품 배송비 무료</p>
+                <h6 className='d-flex align-items-center justify-content-between'>
+                  총 결제금액
+                  <span className='fs-4 fw-bold'>{totalAmount}</span>
+                </h6>
+              </div>
+              <p className='fs-6 mt-2'>전 상품 배송비 무료</p>
+              <div>
+                <button className='buy__btn w-100 '>
+                  <Link to='/checkout'>chekcout</Link>
+                </button>
+                <button className='buy__btn w-100 mt-3'>
+                  <Link to='/shop'>쇼핑계속하기</Link>
+                </button>
               </div>
             </Col>
           </Row>
