@@ -9,7 +9,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   return (
-    <Helmet title='장바구니'>
+    <Helmet title='로그인'>
       <section>
         <Container>
           <Row>
@@ -37,7 +37,7 @@ const Login = () => {
                   로그인
                 </button>
                 <p>
-                  아이디가 없으신가요? <Link to='signup'>아이디 만들기</Link>
+                  아이디가 없으신가요? <Link to='/signup'>아이디 만들기</Link>
                 </p>
               </Form>
             </Col>
